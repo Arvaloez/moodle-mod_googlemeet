@@ -338,7 +338,7 @@ class client {
             }
 
             $meetingcode = substr($googlemeet->url, 24, 12);
-            $name = $googlemeet->name;
+            $name = $googlemeet->originalname;
             $recordingparams = [
                 'q' => '('.$parents.') and
                         trashed = false and
